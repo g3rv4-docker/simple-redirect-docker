@@ -1,6 +1,6 @@
 FROM alpine:3.5
 MAINTAINER Gervasio Marchand <gmc@gmc.uy>
-ENV build_date 2017-01-20
+ENV build_date 2017-01-20 21:36
 
 RUN apk add --update \
     python \
@@ -10,6 +10,8 @@ RUN apk add --update \
     git \
     supervisor \
     redis \
+    curl \
+    bash \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/* \
   && git clone https://github.com/g3rv4/simple-redirect.git /var/simple-redirect \
