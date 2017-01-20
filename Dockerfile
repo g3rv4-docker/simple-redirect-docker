@@ -1,6 +1,6 @@
 FROM alpine:3.5
 MAINTAINER Gervasio Marchand <gmc@gmc.uy>
-ENV build_date 2017-01-19
+ENV build_date 2017-01-20
 
 RUN apk add --update \
     python \
